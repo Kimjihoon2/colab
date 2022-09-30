@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMq5Wdn0AdXZ3EvfnEoUMDa",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Kimjihoon2/colab/blob/main/%EC%88%98%ED%96%89\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 264
+        },
+        "id": "WPXWhdC8urR3",
+        "outputId": "b711795b-67e0-4796-e5e3-1c28058a6e58"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "원본 문자열 ==> Python\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "IndexError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-12-d8f2754165de>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"원본 문자열 ==>\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mss\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mss\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mss\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0mss\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlower\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m \u001b[0mss\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0mss\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0mss\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0mss\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mIndexError\u001b[0m: string index out of range"
+          ]
+        }
+      ],
+      "source": [
+        "ss = \"Python\"\n",
+        "print(\"원본 문자열 ==>\",ss)\n",
+        "ss = \"\"\n",
+        "ss += ss[0].lower()\n",
+        "ss += ss[1].upper()\n",
+        "ss += ss[2].upper()\n",
+        "ss += ss[3].upper()\n",
+        "ss += ss[4].upper()\n",
+        "ss += ss[5].upper()\n",
+        "print(\"변환 문자열 ==>\",ss)\n",
+        "print(ss)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "text = \"트와이스\"\n",
+        "print(\"원본 문자열 ==>\", text)\n",
+        "print()\n",
+        "print(\"반대 문자열 ==>\", text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o1jBDaxyyAtr",
+        "outputId": "860f8347-0649-4412-f594-23b29f6ef2cb"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "원본 문자열 ==> 트와이스\n",
+            "반대 문자열 트와이스\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
